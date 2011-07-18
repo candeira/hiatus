@@ -1,13 +1,20 @@
 hiatus
 ======
 
-Hiatus is a python library that uses the `threading` module's "Timer" to
-implement analogues to javascript's `setTimeout`/`clearTimeout` and
-`setInterval`/`clearInterval`.
+Hiatus is a python library that uses the ``threading`` module's "Timer" to
+implement analogues to javascript's ``setTimeout``/``clearTimeout`` and
+``setInterval``/``clearInterval``.
 
 These functions may be used as decorators. Also important is
 that the python analogues take time arguments in *seconds*, not
 *milliseconds*, in order to be consistent with the standard library.
+
+A Caveat:
+=========
+
+Much of python does not "play nice" with threading. You have been warned.
+
+(I looked into a signal-based approach, but this is limited. Another approach would be to depend on an event loop, such as ``twisted.reactor``.)
 
 Examples:
 =========
@@ -75,7 +82,7 @@ expectations, testing works fine::
 Developers! Developers! Developers!
 ===================================
 
-If you're a python and/or node.js fan and like what you see (or don't quite like
+If you're a python fan and like what you see (or don't quite like
 what you see), I heartily invite you to dig in, fork it up and `git push it
 good <https://twitter.com/#!/maraksquires/status/71911996051824640>`_.
 
