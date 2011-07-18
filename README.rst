@@ -60,7 +60,7 @@ object can then be called with a function. This allows for decorator syntax.
 
 Clears the timeout returned by set_timeout.
 
-`set_interval(f, time=None)`:
+``set_interval(f, time=None)``:
 -----------------------------
 
 Calls ``f`` every ``time`` seconds pass. If ``time`` is
