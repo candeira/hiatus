@@ -45,7 +45,8 @@ Examples:
     HUGE SUCCESS
 
 
-# Functions:
+Functions:
+==========
 
 ``set_timeout(f, time=None)``:
 ------------------------------
